@@ -1,0 +1,6 @@
+{
+  "name": "The Pawn Shop",
+  "description": "A curated vintage and collectibles marketplace connecting buyers and sellers for offline peer-to-peer transactions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "module": "ESNext",
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "allowJs": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": [
+        "./*"
+      ],
+      "@dev-credentials": [
+        "./src/dev/devCredentials.ts"
+      ],
+      "@dev-supabase": [
+        "./src/dev/devSupabaseOverride.ts"
+      ],
+      "@dev-inspector": [
+        "./src/dev/devInspector.tsx"
+      ],
+      "@dev-quickswitch": [
+        "./src/dev/devQuickSwitch.tsx"
+      ],
+      "@dev-logindemo": [
+        "./src/dev/devLoginDemoAccounts.tsx"
+      ],
+      "@dev-settings": [
+        "./src/dev/devSettingsConfig.tsx"
+      ]
+    },
+    "allowImportingTsExtensions": true,
+    "noEmit": true
+  }
+}

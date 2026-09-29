@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">The Pawn Shop</string>
+    <string name="title_activity_main">The Pawn Shop</string>
+    <string name="package_name">in.thepawnshop.app</string>
+    <string name="custom_url_scheme">in.thepawnshop.app</string>
+</resources>
