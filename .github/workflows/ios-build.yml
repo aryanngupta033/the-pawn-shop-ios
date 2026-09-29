@@ -10,7 +10,7 @@ on:
 jobs:
   build-ios:
     name: Build iOS Project (macOS)
-    runs-on: macos-14
+    runs-on: macos-15
 
     steps:
       - name: Check out repository
@@ -30,9 +30,10 @@ jobs:
       - name: Sync Capacitor iOS
         run: npx cap sync ios
 
-      - name: Build iOS App for iPhone (Device Architecture)
+      - name: Build iOS App for iPhone (Xcode 16 / iOS 18)
         run: |
           cd ios/App
+          sudo xcode-select -s /Applications/Xcode_16.0.app/Contents/Developer || sudo xcode-select -s /Applications/Xcode_16.1.app/Contents/Developer || sudo xcode-select -s /Applications/Xcode_16.2.app/Contents/Developer || true
           xcodebuild -project App.xcodeproj \
                      -scheme App \
                      -configuration Release \
